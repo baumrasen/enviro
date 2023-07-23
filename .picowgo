@@ -1,0 +1,26 @@
+{
+    "info": "This file is just used to identify a project folder.",
+    "picowgo.pyIgnore": [
+        "**/.picowgo",
+        "**/.vscode",
+        "**/.github",
+        "**/.gitignore",
+        "**/.gitmodules",
+        "**/.git",
+        "**/.DS_Store",
+        "**/project.pico-go",
+        "**/env",
+        "**/venv",
+        "**/.venv",
+        "**documentation",
+        "**/.picowgo",
+        "**/README.md",
+        "**/LICENSE",
+        ".venv",
+        ".github"
+      ],
+      "picowgo.syncFolder": [
+        "enviro",
+        "phew"
+      ]
+}

@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "Pico (W) Remote Workspace",
+			"uri": "pico:"
+		}
+	],
+	"settings": {
+		"python.languageServer": "Pylance",
+		"picowgo.pyIgnore": [
+			"**/.picowgo",
+			"**/.vscode",
+			"**/.github",
+			"**/.gitignore",
+			"**/.gitmodules",
+			"**/.git",
+			"**/.DS_Store",
+			"**/project.pico-go",
+			"**/env",
+			"**/venv",
+			"**/.venv",
+			"**documentation",
+			"**/.picowgo",
+			"**/README.md",
+			"**/LICENSE"
+		  ]
+	}
+}
