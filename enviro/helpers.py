@@ -1,5 +1,6 @@
 from enviro.constants import *
 import machine, os, time
+from machine import ADC
 
 # miscellany
 # ===========================================================================
@@ -57,3 +58,13 @@ def copy_file(source, target):
         if not chunk:
           break
         outfile.write(chunk)
+
+# get value from ADC pin helpers
+# ===========================================================================
+def AdcValue(gpx = 27, divisor = 2, sample_count = 10):
+  value = 0
+  for i in range(0, sample_count):
+    value += (ADC(gpx).read_u16() * 3.3 / 65535) * divisor
+  value /= sample_count
+  value = round(value, 3)
+  return value
