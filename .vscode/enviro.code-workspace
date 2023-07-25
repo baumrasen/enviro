@@ -1,7 +1,8 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"path": "..",
+			"name": "envrio"
 		},
 		{
 			"name": "Pico (W) Remote Workspace",
@@ -13,19 +14,21 @@
 		"picowgo.pyIgnore": [
 			"**/.picowgo",
 			"**/.vscode",
-			"**/.github",
 			"**/.gitignore",
-			"**/.gitmodules",
 			"**/.git",
 			"**/.DS_Store",
 			"**/project.pico-go",
 			"**/env",
 			"**/venv",
 			"**/.venv",
-			"**documentation",
-			"**/.picowgo",
+			"**/.github",
+			"**/documentation",
 			"**/README.md",
-			"**/LICENSE"
-		  ]
+			"**/.gitmodules",
+			"**/LICENSE",
+			".venv",
+			"documentation",
+			".github"
+		]
 	}
 }
