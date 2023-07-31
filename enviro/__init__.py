@@ -104,8 +104,13 @@ vbus_present = Pin("WL_GPIO2", Pin.IN).value()
 
 # read battery voltage from GP27/ADC1/32
 # use a voltage divisor with 2x 100kOhm
-# pin to take the reading
+# use adc pin to take the reading
 battery_voltage = helpers.AdcValue(gpx = 27, divisor = 2)
+
+# read solar voltage from GP28/ADC2/34
+# use a voltage divisor with 1x 200kOhm and 1x 100kOhm
+# use adc pin to take the reading
+solar_voltage = helpers.AdcValue(gpx = 28, divisor = 3)
 
 # set up the button, external trigger, and rtc alarm pins
 rtc_alarm_pin = Pin(RTC_ALARM_PIN, Pin.IN, Pin.PULL_DOWN)
@@ -289,7 +294,8 @@ def get_sensor_readings():
 
 
   readings = get_board().get_sensor_readings(seconds_since_last)
-  readings["voltage"] = battery_voltage # battery_voltage #Temporarily removed until issue is fixed
+  readings["battery_voltage"] = battery_voltage # battery_voltage
+  readings["solar_voltage"] = solar_voltage # solar_voltage
 
   # write out the last time log
   with open("last_time.txt", "w") as timefile:
