@@ -1,6 +1,7 @@
 {
     "info": "This file is just used to identify a project folder.",
-    "picowgo.pyIgnore": [
+    "micropico.pythonPath": "c:\\develop\\Python\\Python39\\python.exe",
+    "micropico.pyIgnore": [
         "**/.picowgo",
         "**/.vscode",
         "**/.github",
@@ -19,7 +20,7 @@
         ".venv",
         ".github"
       ],
-      "picowgo.syncFolder": [
+      "micropico.syncFolder": [
         "enviro",
         "phew"
       ]

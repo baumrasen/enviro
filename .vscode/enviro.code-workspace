@@ -1,34 +1,15 @@
 {
 	"folders": [
 		{
-			"path": "..",
-			"name": "envrio"
+			"path": ".."
 		},
 		{
 			"name": "Pico (W) Remote Workspace",
 			"uri": "pico:"
 		}
 	],
+	// "micropico.pythonPath": "c:\\msys64\\mingw64\\bin\\python.exe",
 	"settings": {
 		"python.languageServer": "Pylance",
-		"picowgo.pyIgnore": [
-			"**/.picowgo",
-			"**/.vscode",
-			"**/.gitignore",
-			"**/.git",
-			"**/.DS_Store",
-			"**/project.pico-go",
-			"**/env",
-			"**/venv",
-			"**/.venv",
-			"**/.github",
-			"**/documentation",
-			"**/README.md",
-			"**/.gitmodules",
-			"**/LICENSE",
-			".venv",
-			"documentation",
-			".github"
-		]
 	}
 }
